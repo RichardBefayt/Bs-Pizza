@@ -131,6 +131,10 @@ section {
     overflow-y: scroll;
 }
 
+.user-account.active {
+    right: 0;
+}
+
 .user-account #close-account {
     text-align: right;
     margin-bottom: 2.5rem;
@@ -221,6 +225,65 @@ section {
     background-color: var(--white);
 }
 
+.my-orders {
+    position: fixed;
+    top: 0;
+    right: -110%;
+    width: 35rem;
+    height: 100vh;
+    background-color: var(--light-bg);
+    border-left: var(--border);
+    z-index: 110;
+    overflow-y: scroll;
+}
+
+.my-orders.active {
+    right: 0;
+}
+
+.my-orders #close-orders {
+    text-align: right;
+    margin-bottom: 2.5rem;
+}
+
+.my-orders #close-orders span {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: var(--red);
+    text-decoration: underline;
+}
+
+.my-orders #close-orders span:hover {
+    color: var(--black);
+}
+
+.my-orders .title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+.my-orders .box {
+    margin: 1.5rem 0;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--border-shadow);
+    background-color: var(--white);
+}
+
+.my-orders .box p {
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--light-color);
+    line-height: 1.5;
+}
+
+.my-orders .box p span {
+    color: var(--black);
+}
+
 /* media queries  */
 @media (max-width: 991px) {
     html {
@@ -256,5 +319,10 @@ section {
 @media (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+
+    .my-orders {
+        width: 100%;
+        border-left: 0;
     }
 }
