@@ -31,6 +31,7 @@
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--red);
+    border-radius: 20px;
 }
 
 html {
@@ -58,6 +59,7 @@ section {
     margin-top: 1rem;
     padding: 1rem 3rem;
     font-size: 1.8rem;
+    text-align: center;
     text-transform: uppercase;
     color: var(--white);
     background-color: var(--red);
@@ -284,6 +286,104 @@ section {
     color: var(--black);
 }
 
+.shopping-cart {
+    position: fixed;
+    top: 0; 
+    right: -110%;
+    width: 35rem;
+    height: 100vh;
+    background-color: var(--light-bg);
+    border-left: var(--border);
+    z-index: 110;
+    overflow-y: scroll;
+}
+
+.shopping-cart.active {
+    right: 0;
+}
+
+.shopping-cart #close-cart {
+    text-align: right;
+    margin-bottom: 2.5rem;
+}
+
+.shopping-cart #close-cart span {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: var(--red);
+    text-decoration: underline;
+}
+
+.shopping-cart #close-cart span:hover {
+    color: var(--black);
+}
+
+.shopping-cart .box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 1.7rem 0;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+}
+
+.shopping-cart .box .fa-times {
+    position: absolute;
+    cursor: pointer;
+    top: 1.2rem; 
+    right: 1.2rem;
+    font-size: 1.8rem;
+    color: var(--red);
+}
+
+.shopping-cart .box .fa-times:hover {
+    color: var(--black);
+}
+
+.shopping-cart .box img {
+    width: 7rem;
+}
+
+.shopping-cart .box .content p {
+    font-size: 1.8rem;
+    color: var(--light-color);
+}
+
+.shopping-cart .box .content p span {
+   color: var(--red);
+}
+
+.shopping-cart .box .content form {
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.shopping-cart .box .content form .qty {
+    width: 8rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    border: var(--border);
+    border-radius: .5rem;
+}
+
+.shopping-cart .box .content form .fa-edit {
+    cursor: pointer;
+    width: 5.5rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+}
+
+.shopping-cart .box .content form .fa-edit:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
 /* media queries  */
 @media (max-width: 991px) {
     html {
@@ -322,6 +422,11 @@ section {
     }
 
     .my-orders {
+        width: 100%;
+        border-left: 0;
+    }
+
+    .shopping-cart {
         width: 100%;
         border-left: 0;
     }

@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>BS Pizza</title>
+    <title>Bs Pizza</title>
 </head>
 <body>
     <!-- Partie en-tête -->
     <header class="header">
         <section class="flex">
-            <a href="#home" class="logo">BS Pizza</a>
+            <a href="#home" class="logo">Bs Pizza</a>
 
             <nav class="navbar">
                 <a href="#home">Accueil</a>
@@ -34,17 +34,17 @@
     <!-- Partie utilisateur -->
     <div class="user-account">
         <section>
-            <div id="close-account"><span>close</span></div>
+            <div id="close-account"><span>fermer</span></div>
 
             <div class="user">
                 <p><span>Vous êtes maintenant logué !</span></p>
             </div>
 
             <div class="display-orders">
-                <p>pizza 4 Fromages <span>07€</span></p>
-                <p>pizza Margherita <span>05€</span></p>
-                <p>pizza Raclette <span>09€</span></p>
-                <p>pizza Hawaïenne <span>13,5€</span></p>
+                <p>Pizza Margherita <span>07€</span></p>
+                <p>Pizza Mozzarella <span>05€</span></p>
+                <p>Pizza 4 Fromages <span>09€</span></p>
+                <p>Pizza Choux de Bruxelles <span>13,5€</span></p>
             </div>
 
             <div class="flex">
@@ -123,7 +123,7 @@
     <!-- Partie commande -->
     <div class="my-orders">
         <section>
-            <div id="close-orders"><span>close</span></div>
+            <div id="close-orders"><span>fermer</span></div>
     
             <h3 class="title">Mes Commandes</h3>
             
@@ -134,7 +134,7 @@
                 <p>Numéro de tel : <span>06.35.02.11.58</span> </p>
                 <p>Adresse : <span>59 avenue Roger Guichard - 95610 Éragny</span> </p>
                 <p>Mode de paiement : <span>Monnaie à la la livraison</span> </p>
-                <p>Détail de la commande : <span>Pizza 01 07€, Pizza 03 05€, Pizza 06 09€</span> </p>
+                <p>Détail de la commande : <span>Pizza Margherita 07€, Pizza Mozzarella 05€, Pizza Choux de Bruxelles 09€</span> </p>
                 <p>Total de la commande : <span>21€</span></p>
                 <p>Statu de la commande : <span>En attente</span></p>
             </div>
@@ -145,7 +145,7 @@
                 <p>Numéro de tel : <span>06.35.02.11.58</span> </p>
                 <p>Adresse : <span>59 avenue Roger Guichard - 95610 Éragny</span> </p>
                 <p>Mode de paiement : <span>Monnaie à la la livraison</span> </p>
-                <p>Détail de la commande : <span>Pizza 01 07€, Pizza 03 05€, Pizza 06 09€</span> </p>
+                <p>Détail de la commande : <span>Pizza Margherita 07€, Pizza Mozzarella 05€, Pizza Choux de Bruxelles 09€</span> </p>
                 <p>Total de la commande : <span>21€</span></p>
                 <p>Statu de la commande : <span>En attente</span></p>
             </div>
@@ -154,7 +154,101 @@
 
     <div class="shopping-cart">
         <section>
-            <div id="close-cart"><span>close</span></div>
+            <div id="close-cart"><span>fermer</span></div>
+
+            <div class="box">
+                <a href="#" class="fas fa-times"></a>
+                <img src="assets/images/pizza-1.jpg" alt="">
+                <div class="content">
+                    <p>Pizza Margherita <span>07€</span></p>
+                    <form action="" method="post">
+                        <input
+                            type="number"
+                            class="qty"
+                            name="qty"
+                            min="1"
+                            value="2"
+                            max="100"
+                        >
+                        <button
+                            type="submit"
+                            class="fas fa-edit"
+                            name="update_qty"
+                        ></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-times"></a>
+                <img src="assets/images/pizza-3.jpg" alt="">
+                <div class="content">
+                    <p>Pizza Mozzarella <span>05€</span></p>
+                    <form action="" method="post">
+                        <input
+                            type="number"
+                            class="qty"
+                            name="qty"
+                            min="1"
+                            value="1"
+                            max="100"
+                        >
+                        <button
+                            type="submit"
+                            class="fas fa-edit"
+                            name="update_qty"
+                        ></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-times"></a>
+                <img src="assets/images/pizza-6.jpg" alt="">
+                <div class="content">
+                    <p>Pizza 4 Fromages <span>09€</span></p>
+                    <form action="" method="post">
+                        <input
+                            type="number"
+                            class="qty"
+                            name="qty"
+                            min="1"
+                            value="2"
+                            max="100"
+                        >
+                        <button
+                            type="submit"
+                            class="fas fa-edit" 
+                            name="update_qty"
+                        ></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-times"></a>
+                <img src="assets/images/pizza-7.jpg" alt="">
+                <div class="content">
+                    <p>Pizza Choux de Bruxelles <span>13,5€</span></p>
+                    <form action="" method="post">
+                        <input
+                            type="number"
+                            class="qty"
+                            name="qty"
+                            min="1"
+                            value="1"
+                            max="100"
+                        >
+                        <button
+                            type="submit"
+                            class="fas fa-edit" 
+                            name="update_qty"
+                        ></button>
+                    </form>
+                </div>
+            </div>
+
+            <a href="#order" class="btn">Commander</a>
         </section>
     </div>
 
