@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BS Pizza</title>
+</head>
+<body>
+    <!-- Partie en-tête -->
+    <header class="header">
+        <section class="flex">
+            <a href="#home" class="logo">BS Pizza</a>
+
+            <nav class="navbar">
+                <a href="#home">Accueil</a>
+                <a href="#about">A Propos</a>
+                <a href="#menu">Menu</a>
+                <a href="#order">Commande</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="order-btn" class="fas fa-box"></div>
+                <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+            </div>
+        </section>
+    </header>
+    
+    <!-- Partie utilisateur -->
+    <div class="user-account">
+        <section>
+            <div id="close-account"><span>close</span></div>
+
+            <div class="user">
+                <p><span>Vous êtes maintenant logué !</span></p>
+            </div>
+
+            <div class="display-orders">
+                <p>pizza-1 <span>($3/- X 2)</span></p>
+                <p>pizza 03 <span>($2/- X 1)</span></p>
+                <p>pizza 06 <span>($4/- X 4)</span></p>
+                <p>pizza 07 <span>($2/- X 1)</span></p>
+            </div>
+
+            <div class="flex">
+            <form action="" method="post">
+                <h3>Connexion</h3>
+                <input
+                    class="box"
+                    type="email"
+                    name="email"
+                    placeholder="Adresse mail"
+                    maxlength="50"
+                    required
+                >
+                <input
+                    class="box"
+                    type="password"
+                    name="pass"
+                    placeholder="Mot de passe"
+                    maxlength="20"
+                    required
+                >
+                <input
+                    class="btn"
+                    type="submit"
+                    value="Connexion"
+                    name="login"
+                >
+            </form>
+
+            <form action="" method="post">
+                <h3>Inscription</h3>
+                <input
+                    class="box"
+                    type="text"
+                    name="name"
+                    placeholder="Nom"
+                    maxlength="20"
+                    required
+                >
+                <input
+                    class="box"
+                    type="email"
+                    name="email"
+                    placeholder="Adresse mail"
+                    maxlength="50"
+                    required
+                >
+                <input
+                    class="box"
+                    type="password"
+                    name="pass"
+                    placeholder="Mot de passe"
+                    maxlength="20"
+                    required
+                >
+                <input
+                    class="box"
+                    type="password"
+                    name="cpass"
+                    placeholder="Confirmer mot de passe"
+                    maxlength="20"
+                    required
+                >
+                <input
+                    class="btn"
+                    type="submit"
+                    value="Inscription"
+                    name="register"
+                >
+            </form>
+
+            </div>
+        </section>
+        
+
+    </div>
+
+
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>
