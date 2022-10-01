@@ -474,14 +474,19 @@ section {
 
 .about .box-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 90px;
+    max-width: 1280px;
+    height: auto;
+    margin: 0 auto 35px;
+    padding: 20px 15px;
     gap: 1.5rem;
-    align-items: flex-start;
-    justify-content: center;
 }
 
 .about .box-container .box {
-    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 2rem;
     text-align: center;
     background-color: var(--white);
@@ -500,11 +505,63 @@ section {
 }
 
 .about .box-container .box p {
-    padding :1rem 0;
-    line-height: 2;
-    font-size: 1.6rem;
-    color:var(--light-color);
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    line-height: 1.9;
+    color: var(--light-color);
 }
+
+.heading,
+.heading-subtitle,
+.heading-price {
+    color: var(--white);
+}
+
+.heading-subtitle,
+.heading-price {
+    margin-top: 2rem;
+}
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 90px;
+    max-width: 1280px;
+    height: auto;
+    margin: 0 auto 35px;
+    padding: 20px 15px;
+    gap: 1.5rem;
+}
+
+.menu .box-container .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.menu .box-container .box img {
+    max-width: 85%;
+    height: auto;
+}
+
+.menu .box-container .box .name {
+    margin: .5rem 0;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.menu .box-container .box p {
+    font-size: 2rem;
+    color: var(--black);
+}
+ 
 
 /* Animations */
 @keyframes fadeLeft {
@@ -556,6 +613,13 @@ section {
     }
 }
 
+@media (max-width: 659px) {
+    .about .box-container,
+    .menu .box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 450px) {
     html {
         font-size: 50%;
@@ -569,5 +633,12 @@ section {
     .shopping-cart {
         width: 100%;
         border-left: 0;
+    }
+}
+
+@media (max-width: 379px) {
+    .about .box-container,
+    .menu .box-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
