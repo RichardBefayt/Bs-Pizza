@@ -42,7 +42,7 @@ html {
 }
 
 body {
-    background: var(--light-bg);
+    background: var(--black);
     overflow-x: hidden;
 }
 
@@ -50,6 +50,15 @@ section {
     padding: 2rem;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+/* Faire parallaxe au scroll pour affichage de chaque partie About */
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    color:var(--black);
+    text-transform: uppercase;
 }
 
 .btn {
@@ -87,9 +96,19 @@ section {
     justify-content: space-between;
 }
 
-.header .flex .logo {
+.header .flex .header-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
     font-size: 2.5rem;
     color: var(--black);
+}
+
+.header .flex .header-link .header-span img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
 }
 
 .header .flex .navbar a {
@@ -385,20 +404,20 @@ section {
 }
 
 .home-bg {
-    background: url(./assets/images/home-bg.jpg) no-repeat;
+    background: url(./assets/images/FDE/fde-4.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .home-bg .home .slide-container {
-    margin-top: 12rem;
+    margin-top: 10rem;
 }
 
 .home-bg .home .slide-container .slide {
     display: none;
     flex-wrap: wrap;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .home-bg .home .slide-container .slide.active {
@@ -447,6 +466,44 @@ section {
 .home-bg .home .slide-container .slide .content .fa-angle-right:hover {
     color: var(--white);
     background-color: var(--red);
+}
+
+.about .heading {
+    color: var(--white);
+}
+
+.about .box-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about .box-container .box {
+    /* height: 100%; */
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.about .box-container .box img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.about .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.about .box-container .box p {
+    padding :1rem 0;
+    line-height: 2;
+    font-size: 1.6rem;
+    color:var(--light-color);
 }
 
 /* Animations */
