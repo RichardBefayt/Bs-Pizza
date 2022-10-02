@@ -144,7 +144,7 @@ section {
 .user-account {
     position: absolute;
     top: 0;
-    right: -110%;
+    right: -100%;
     width: 100%;
     height: 100vh;
     background-color: var(--white);
@@ -180,34 +180,28 @@ section {
 }
 
 .user-account .user p {
+    margin-top: 1.5rem;
     font-size: 2rem;
     color:var(--black);
 }
  
 .user-account .user p span {
-    color:var(--green);
+    color: var(--green);
 }
 
 .user-account .display-orders {
-    padding: 3rem 2rem;
-    text-align: center;
-    background-color: var(--light-bg);
-    border-radius: .5rem;
-    margin: 2rem 0;
     display: flex;
-    align-items: flex-start;
     justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
+    align-items: center;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
 }
 
-.user-account .display-orders p {
-    padding: 1rem 2rem;
-    font-size: 2rem;
-    color: var(--light-color);
-    background-color: var(--white);
+.user-account .display-orders img {
+    width: 100%;
+    height: auto;
     border-radius: .5rem;
-    box-shadow: var(--box-shadow);
 }
 
 .user-account .display-orders p span {
