@@ -121,7 +121,7 @@
         </section>
     </div>
 
-    <!-- Partie Commande -->
+    <!-- Partie Commandes passées -->
     <div class="my-orders">
         <section>
             <div id="close-orders"><span>fermer</span></div>
@@ -548,6 +548,125 @@
                 <h4>Bouteille : 2,5€</h4>
                 <img src="assets/images/Boissons/bouteilles-d-eau.jpg" alt="Tortilla">
             </div>
+        </div>
+
+    </section>
+
+    <!-- Partie Commande en cours -->
+    <section class="order" id="order">
+
+        <h1 class="heading">Commande</h1>
+
+        <form action="" method="post">
+
+            <div class="display-orders">
+                <div class="little-box">
+                    <h4 class="name">Margarita</h4>
+                    <img src="assets/images/Pizzas/pizza-1.jpg" alt="Pizza Margarita">
+                    <p>Fromage, olives, tomate</p>
+                </div>
+                <div class="little-box">
+                    <h4 class="name">4 saisons</h4>
+                    <img src="assets/images/Pizzas/pizza-2.jpg" alt="Pizza Calzone">
+                    <p>Fromage, jambon ou viande hachée ou thon + œuf</p>
+                </div>
+
+            </div>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>Votre nom :</span>
+                    <input
+                        class="box"
+                        type="text"
+                        name="name"
+                        maxlength="20"
+                        required
+                    >
+                </div>
+                
+                <div class="inputBox">
+                    <span>Votre numéro de téléphone :</span>
+                    <input
+                        class="box"
+                        type="number"
+                        name="number"
+                        min="0"
+                        required
+                    >
+                </div>
+
+                <div class="inputBox">
+                    <span>Mode de paiement :</span>
+                    <select name="method" class="box">
+                        <option value="cash">Paiement en liquide à la livraison 💶</option>
+                        <option value="credit card">Carte bancaire 💳</option>
+                    </select>
+                </div>
+                
+                <div class="inputBox">
+                    <span>Adresse de livraison :</span>
+                    <input
+                        class="box"
+                        type="text"
+                        name="flat"
+                        maxlength="50"
+                        required
+                    >
+                </div>
+            </div>
+
+            <input
+                class="btn"
+                type="submit"
+                value="Passer commande"
+                name="order"
+            >
+
+        </form>
+
+    </section>
+
+    <section class="footer">
+
+        <h1 class="heading">Informations</h1>
+        
+        <div class="box-container">
+
+            <div class="box box-1">
+                <i class="fas fa-phone"></i>
+                <h3>Téléphone</h3>
+                <p>01 34 21 90 14</p>
+            </div>
+
+            <div class="box box-2">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>bs-pizza@gmail.com</p>
+            </div>
+
+            <div class="box box-3">
+                <i class="fas fa-clock"></i>
+                <h3>Horaires</h3>
+                <p>Du lundi au samedi : 11h - 18h (sans interruption)</p>
+                <p>Le dimanche : 18h - 22h</p>
+            </div>
+
+            <div class="box box-4">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Adresse</h3>
+                <p>49 rue du Parc</p>
+                <p>95310 Saint-Ouen L'Aumône</p>
+                <div class="address-img-container">
+                    <div class="address-img img-1">
+                        <img src="assets/images/Pizzeria/map-1.jpg" alt="Photo extérieure">
+                    </div>
+                    <div class="address-img img-2">
+                        <img src="assets/images/Pizzeria/map-2.jpg" alt="Plan où trouver la pizzeria">
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </section>
