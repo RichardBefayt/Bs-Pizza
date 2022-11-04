@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Bs Pizza/Utilisateur</title>
+    </head>
+<body>
+    <!-- Partie En-tête -->
+    <header class="header">
+        <section class="flex">
+            <a href="index.html" class="header-link">
+                <span class="header-span">
+                    <img src="assets/images/logo.png" alt="Logo" />
+                </span>
+                <h3>Bs Pizza</h3>
+            </a>
+
+            <nav class="navbar">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">A Propos</a>
+                <a href="menu.html">Menu</a>
+                <a href="order.html">Commandes</a>
+                <a href="cart.html">Panier</a>
+                <a href="user.html">Compte</a>
+            </nav>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="order-btn" class="fas fa-box"></div>
+                <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+            </div>
+        </section>
+    </header>
+
+     <!-- Partie Utilisateur -->
+     <div class="user-account">
+        <section>
+            <div id="close-account"><span>fermer</span></div>
+
+            <div class="user">
+                <p><span>Vous êtes maintenant logué !</span></p>
+                <div class="display-orders">
+                    <img src="assets/images/Illustrations/store.jpg" alt="Illustration extérieure de la pizzeria">
+                </div>
+            </div>
+
+            <div class="flex">
+            <form action="" method="post">
+                <h3>Connexion</h3>
+                <input
+                    class="box"
+                    type="email"
+                    name="email"
+                    placeholder="Adresse mail"
+                    maxlength="50"
+                    required
+                >
+                <input
+                    class="box"
+                    type="password"
+                    name="pass"
+                    placeholder="Mot de passe"
+                    maxlength="20"
+                    required
+                >
+                <input
+                    class="btn"
+                    type="submit"
+                    value="Connexion"
+                    name="login"
+                >
+            </form>
+
+            <form action="" method="post">
+                <h3>Inscription</h3>
+                <input
+                    class="box"
+                    type="text"
+                    name="name"
+                    placeholder="Nom"
+                    maxlength="20"
+                    required
+                >
+                <input
+                    class="box"
+                    type="email"
+                    name="email"
+                    placeholder="Adresse mail"
+                    maxlength="50"
+                    required
+                >
+                <input
+                    class="box"
+                    type="password"
+                    name="pass"
+                    placeholder="Mot de passe"
+                    maxlength="20"
+                    required
+                >
+                <input
+                    class="box"
+                    type="password"
+                    name="cpass"
+                    placeholder="Confirmer mot de passe"
+                    maxlength="20"
+                    required
+                >
+                <input
+                    class="btn"
+                    type="submit"
+                    value="Inscription"
+                    name="register"
+                >
+            </form>
+
+            </div>
+        </section>
+    </div>
+</body>
+</html>
