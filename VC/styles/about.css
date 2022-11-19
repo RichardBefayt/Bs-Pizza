@@ -1,5 +1,58 @@
-.about .heading {
+.global-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
     color: var(--white);
+    background: url(../assets/images/FDE/fde-5.jpg) center/cover;
+}
+
+.about {
+    padding: 0 2rem;
+    text-align: center;
+    border-radius: .5rem;
 }
 
 
+
+/* Bas */
+.about .bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 90px;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 15px;
+    gap: 1.5rem;
+}
+
+.about .bottom .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.about .bottom .box img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.about .bottom .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.about .bottom .box p {
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    line-height: 1.9;
+    color: var(--light-color);
+}
