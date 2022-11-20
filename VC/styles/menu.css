@@ -1,13 +1,22 @@
 .global-menu {
     min-height: 100vh;
-    background: url(../assets/images/FDE/fde-10.jpg) center/contain;
-    color: black;
+    background-image: url(../assets/images/FDE/fde-2.jpg);
+    background-position: center/contain;
+    color: var(--white);
 }
 
 .heading,
+.menu-description,
 .heading-subtitle,
-.heading-price {
-    margin-left: 20px;
+.heading-price,
+.heading-delivery {
+    text-shadow: 0 2px 0 #000000;
+}
+
+.menu-description {
+    font-size: clamp(1.5rem, 2.2rem, 2.5rem);
+    font-weight: bold;
+    text-align: justify;
 }
 
 #menu .heading {
@@ -22,14 +31,19 @@
     font-size: 2rem;
 }
 
+#menu {
+    width: 80%;
+    margin: 0 auto;
+}
 
 .menu .box-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    min-width: 90px;
-    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
     height: auto;
-    margin: 0 auto 35px;
+    margin: 2rem auto;
     padding: 20px 15px;
     gap: 1.5rem;
 }
@@ -39,7 +53,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    width: 312px;
+    height: 312px;
+    padding: 2.5rem;
     text-align: center;
     background-color: var(--white);
     border-radius: .5rem;
@@ -48,12 +64,12 @@
 
 .menu .box-container .box .name {
     margin: .5rem 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--black);
 }
 .menu .box-container .box-img-container {
-    width: 312px;
-    height: 312px;
+    width: 80%;
+    height: 80%;
     margin: 1rem;
     border-radius: .5rem;
 }
@@ -64,7 +80,7 @@
 }
 
 .menu .box-container .box p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--black);
 }
 
