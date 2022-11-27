@@ -134,23 +134,23 @@ section {
 }
 
 .home .heading {
-    font-size: clamp(1rem, 4.5rem, 4rem);
+    font-size: clamp(1rem, 3.5rem, 4rem);
     color: var(--white);
+    margin: 30px 0;
 }
 
 /* Contact */
 .home .center {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     min-width: 90px;
     max-width: 1200px;
-    height: 150px;
+    height: auto;
     margin: 0 auto;
     padding: 0 auto;
-    gap: 100px;
-    font-size: 18px;
+    gap: 30px;
     color: rgb(255, 255, 255);
 }
 
@@ -189,18 +189,19 @@ section {
 /* Bas */
 .home .bottom {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    min-width: 90px;
+    width: auto;
     max-width: 1200px;
     height: auto;
     margin: 0 auto;
     padding: 20px 15px;
-    gap: 10.5rem;
+    gap: 90px;
 }
 
 .home .bottom .card {
-    width: 350px;
+    max-width: 350px;
     height: auto;
     margin-bottom: 2rem;
     padding: 2rem;
@@ -246,7 +247,7 @@ footer {
 }
 
 /* Media Queries  */
-@media all and (max-width: 991px) {
+@media all and (max-width: 992px) {
     /* Menu Burger */
     .header .flex .navbar .toggle {
         display: block;
@@ -290,11 +291,19 @@ footer {
     .visible .header .flex .navbar .links {
         transform: translateX(0);
     }
+
+    .home .bottom {
+        gap: 60px;
+    }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     #menu-btn {
         display: inline-block;
+    }
+
+    .header .flex .navbar .links {
+        width: 30%;
     }
 
     .header .flex .navbar .links a {
@@ -305,19 +314,27 @@ footer {
     .menu-bg .menu-heading .slide-container .slide .content h3 {
         font-size: 4rem;
     }
-}
 
-
-
-@media (max-width: 639px) {
-    .container {
-        display: none;
+    .home .bottom {
+        gap: 30px;
     }
 }
 
 
 
-@media (max-width: 450px) {
+@media only screen and (max-width: 600px) {
+    .container {
+        display: none;
+    }
+
+    .header .flex .navbar .links {
+        width: 40%;
+    }
+}
+
+
+
+@media only screen and (max-width: 450px) {
     html {
         font-size: 50%;
     }
