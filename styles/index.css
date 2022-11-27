@@ -134,7 +134,7 @@ section {
 }
 
 .home .heading {
-    font-size: clamp(1rem, 3.5rem, 4rem);
+    font-size: 3.5rem;
     color: var(--white);
     margin: 30px 0;
 }
@@ -156,6 +156,7 @@ section {
 
 .home .center .contact {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -292,6 +293,12 @@ footer {
         transform: translateX(0);
     }
 
+    .home .center {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
     .home .bottom {
         gap: 60px;
     }
@@ -313,6 +320,10 @@ footer {
 
     .menu-bg .menu-heading .slide-container .slide .content h3 {
         font-size: 4rem;
+    }
+
+    .home .heading {
+        font-size: 2.5rem;
     }
 
     .home .bottom {
