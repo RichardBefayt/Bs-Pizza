@@ -6,6 +6,6 @@ A bientôt 🍕
 
 ----------------------------------------------------------------
 
-Ce projet est réalisé par Richard Befayt pour le compte de Bs Pizza.
+Projet réalisé pour le compte de Bs Pizza.
 
 Bonne visite.
