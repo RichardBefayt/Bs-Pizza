@@ -1,6 +1,6 @@
 .global-menu {
     min-height: 100vh;
-    background-image: url(../assets/images/FDE/fde-2.jpg);
+    background-image: url(../assets/images/FDE/fde-2.webp);
     background-position: center/contain;
     color: var(--white);
 }
@@ -55,8 +55,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 320px;
-    height: 320px;
+    width: 370px;
+    height: 370px;
     padding: 2.5rem;
     text-align: center;
     background-color: var(--white);
